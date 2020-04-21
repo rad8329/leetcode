@@ -1,4 +1,4 @@
-package com.rad8329.leetcode.findNumberOfEvenNumbersOfDigits;
+package com.rad8329.leetcode.java.findNumberOfEvenNumbersOfDigits;
 
 /**
  * Given an array nums of integers, return how many of them contain an even number of digits.
@@ -32,9 +32,10 @@ package com.rad8329.leetcode.findNumberOfEvenNumbersOfDigits;
 class Solution {
     public int findNumbers(int[] numbers) {
         short counter = 0;
+        byte length;
 
         for (short i = 0; i < numbers.length && i < 500; i++) {
-            byte length = (byte) (Math.log10(numbers[i]) + 1);
+            length = (byte) (Math.log10(numbers[i]) + 1);
 
             if (length % 2 == 0) {
                 counter++;

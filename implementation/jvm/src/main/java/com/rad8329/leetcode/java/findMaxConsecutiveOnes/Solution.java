@@ -1,4 +1,4 @@
-package com.rad8329.leetcode.findMaxConsecutiveOnes;
+package com.rad8329.leetcode.java.findMaxConsecutiveOnes;
 
 /**
  * Given a binary array, find the maximum number of consecutive 1s in this array.

@@ -1,7 +1,6 @@
-package com.rad8329.leetcode.findNumberOfEvenNumbersOfDigits;
+package com.rad8329.leetcode.java.findNumberOfEvenNumbersOfDigits;
 
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class SolutionTest {
