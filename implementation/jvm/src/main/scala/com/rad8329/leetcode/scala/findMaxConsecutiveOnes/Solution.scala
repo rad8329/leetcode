@@ -18,24 +18,24 @@ package com.rad8329.leetcode.scala.findMaxConsecutiveOnes
  * ---------------------------------------------------------------------------------------------------------------------
  * Poor perfomance because the recursion, but the intent is to do FP, and the Scala right way
  *
- * Runtime: 604 ms
+ * Runtime: 596 ms
  * Memory Usage: 52.3 MB
  */
 object Solution {
   def findMaxConsecutiveOnes(numbers: Array[Int]): Int = {
     @scala.annotation.tailrec
-    def recursionfindMaxConsecutiveOnes(numbers: Array[Int],
+    def recursionFindMaxConsecutiveOnes(numbers: Array[Int],
                                         index: Int = 0,
                                         maxNumberOfConsecutiveOnes: Int = 0,
                                         counterOfConsecutiveOnes: Int = 0
                                        ): Int = {
       if (index >= numbers.length) maxNumberOfConsecutiveOnes
       else if (numbers(index) == 1) {
-        val counter = counterOfConsecutiveOnes + 1
-        recursionfindMaxConsecutiveOnes(numbers, index + 1, Math.max(counter, maxNumberOfConsecutiveOnes), counter)
-      } else recursionfindMaxConsecutiveOnes(numbers, index + 1, maxNumberOfConsecutiveOnes)
+        val counter: Int = counterOfConsecutiveOnes + 1
+        recursionFindMaxConsecutiveOnes(numbers, index + 1, Math.max(counter, maxNumberOfConsecutiveOnes), counter)
+      } else recursionFindMaxConsecutiveOnes(numbers, index + 1, maxNumberOfConsecutiveOnes)
     }
 
-    recursionfindMaxConsecutiveOnes(numbers)
+    recursionFindMaxConsecutiveOnes(numbers)
   }
 }
