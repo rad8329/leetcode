@@ -11,8 +11,8 @@ object Solution {
       if (index >= numbers.length) maxNumberOfConsecutiveOnes
       else if (numbers(index) == 1) {
         val counter = counterOfConsecutiveOnes + 1
-        recursionfindMaxConsecutiveOnes(numbers.drop(1), index + 1, Math.max(counter, maxNumberOfConsecutiveOnes), counter)
-      } else recursionfindMaxConsecutiveOnes(numbers.drop(1), index + 1, maxNumberOfConsecutiveOnes)
+        recursionfindMaxConsecutiveOnes(numbers, index + 1, Math.max(counter, maxNumberOfConsecutiveOnes), counter)
+      } else recursionfindMaxConsecutiveOnes(numbers, index + 1, maxNumberOfConsecutiveOnes)
     }
 
     recursionfindMaxConsecutiveOnes(numbers)
