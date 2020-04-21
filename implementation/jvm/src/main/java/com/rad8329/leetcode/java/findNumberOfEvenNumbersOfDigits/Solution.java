@@ -28,6 +28,10 @@ package com.rad8329.leetcode.java.findNumberOfEvenNumbersOfDigits;
  * 1 <= nums[i] <= 10^5
  *
  * https://leetcode.com/problems/find-numbers-with-even-number-of-digits/
+ *
+ * ---------------------------------------------------------------------------------------------------------------------
+ * Runtime: 1 ms
+ * Memory Usage: 39.1 MB
  */
 class Solution {
     public int findNumbers(int[] numbers) {
