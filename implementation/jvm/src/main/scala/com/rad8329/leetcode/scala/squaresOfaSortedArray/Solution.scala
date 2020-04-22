@@ -20,6 +20,12 @@ package com.rad8329.leetcode.scala.squaresOfaSortedArray
  * A is sorted in non-decreasing order.
  *
  * https://leetcode.com/problems/squares-of-a-sorted-array/
+ *
+ * ---------------------------------------------------------------------------------------------------------------------
+ * Poor perfomance because the recursion, but the intent is to do FP, and the Scala right way
+ *
+ * Runtime: 588 ms
+ * Memory Usage: 52.3 MB
  */
 object Solution {
   def sortedSquares(numbers: Array[Int]): Array[Int] = numbers.map(number => number * number).sorted
