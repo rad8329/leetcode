@@ -12,6 +12,14 @@ class SolutionTest {
         int[] example1 = {-4, -1, 0, 3, 10};
         int[] example2 = {-7, -3, 2, 3, 11};
 
+        Solution solution = new Solution();
+
+        //Java impl
+        assertArrayEquals(new int[]{0, 1, 9, 16, 100}, solution.sortedSquares(example1));
+
+        assertArrayEquals(new int[]{4, 9, 9, 49, 121}, solution.sortedSquares(example2));
+
+        //Scala impl
         assertArrayEquals(
                 new int[]{0, 1, 9, 16, 100},
                 com.rad8329.leetcode.scala.squaresOfaSortedArray.Solution.sortedSquares(example1)

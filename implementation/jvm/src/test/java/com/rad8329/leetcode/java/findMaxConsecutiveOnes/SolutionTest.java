@@ -11,7 +11,12 @@ public class SolutionTest {
 
         int[] numbers = {1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1};
 
-        assertEquals(4, (new com.rad8329.leetcode.java.findMaxConsecutiveOnes.Solution()).findMaxConsecutiveOnes(numbers));
+        //Java impl
+        Solution solution = new Solution();
+
+        assertEquals(4, solution.findMaxConsecutiveOnes(numbers));
+
+        //Scala impl
         assertEquals(4, com.rad8329.leetcode.scala.findMaxConsecutiveOnes.Solution.findMaxConsecutiveOnes(numbers));
     }
 }
