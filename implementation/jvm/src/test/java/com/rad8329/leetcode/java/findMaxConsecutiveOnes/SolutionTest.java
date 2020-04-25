@@ -8,12 +8,10 @@ public class SolutionTest {
 
     @Test
     public void testFindMaxConsecutiveOnes() {
-
+        Solution solution = new Solution();
         int[] numbers = {1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1};
 
         //Java impl
-        Solution solution = new Solution();
-
         assertEquals(4, solution.findMaxConsecutiveOnes(numbers));
 
         //Scala impl

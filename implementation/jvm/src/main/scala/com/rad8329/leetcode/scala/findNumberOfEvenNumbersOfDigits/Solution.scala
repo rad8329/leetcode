@@ -25,7 +25,7 @@ package com.rad8329.leetcode.scala.findNumberOfEvenNumbersOfDigits
  * Constraints:
  *
  * 1 <= nums.length <= 500
- * 1 <= nums[i] <= 10^5
+ * 1 <= nums[i] <= 100000
  *
  * https://leetcode.com/problems/find-numbers-with-even-number-of-digits/
  *
