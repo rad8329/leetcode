@@ -16,7 +16,6 @@ package com.rad8329.leetcode.scala.findMaxConsecutiveOnes
  * https://leetcode.com/problems/max-consecutive-ones/
  *
  * ---------------------------------------------------------------------------------------------------------------------
- * Poor perfomance because the recursion, but the intent is to do FP, and the Scala right way
  *
  * Runtime: 596 ms
  * Memory Usage: 52.3 MB

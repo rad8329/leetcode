@@ -30,7 +30,6 @@ package com.rad8329.leetcode.scala.findNumberOfEvenNumbersOfDigits
  * https://leetcode.com/problems/find-numbers-with-even-number-of-digits/
  *
  * ---------------------------------------------------------------------------------------------------------------------
- * Poor perfomance because the recursion, but the intent is to do FP, and the Scala right way
  *
  * Runtime: 488 ms
  * Memory Usage: 50.6 MB

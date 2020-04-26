@@ -22,7 +22,6 @@ package com.rad8329.leetcode.scala.squaresOfaSortedArray
  * https://leetcode.com/problems/squares-of-a-sorted-array/
  *
  * ---------------------------------------------------------------------------------------------------------------------
- * Poor perfomance because the recursion, but the intent is to do FP, and the Scala right way
  *
  * Runtime: 588 ms
  * Memory Usage: 52.3 MB

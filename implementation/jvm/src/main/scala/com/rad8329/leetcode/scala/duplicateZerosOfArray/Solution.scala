@@ -28,30 +28,31 @@ package com.rad8329.leetcode.scala.duplicateZerosOfArray
  *
  * ---------------------------------------------------------------------------------------------------------------------
  *
- * Runtime: 792 ms
- * Memory Usage: 67.7 MB
+ * Runtime: 888 ms
+ * Memory Usage: 67.2 MB
  */
 object Solution {
 
   def duplicateZeros(numbers: Array[Int]): Unit = {
-    var leftPivot = 0
+    var i = 0
 
-    while (leftPivot < numbers.length - 1) {
-      if (numbers(leftPivot) == 0 && leftPivot + 1 < numbers.length) {
-
-        var rightPivot = numbers.length - 2
-
-        while (rightPivot > leftPivot) {
-          numbers(rightPivot + 1) = numbers(rightPivot)
-          rightPivot = rightPivot - 1
-        }
-
-        numbers(leftPivot + 1) = 0
-
-        leftPivot = leftPivot + 1
+    while (i < numbers.length - 1) {
+      if (numbers(i) == 0 && i + 1 < numbers.length) {
+        shifOneElementToRight(numbers, i)
+        numbers(i + 1) = 0
+        i = i + 1
       }
 
-      leftPivot = leftPivot + 1
+      i = i + 1
+    }
+  }
+
+  private def shifOneElementToRight(numbers: Array[Int], index: Int) {
+    var i = numbers.length - 2
+
+    while (i > index) {
+      numbers(i + 1) = numbers(i)
+      i = i - 1
     }
   }
 }
