@@ -43,8 +43,10 @@ public class Solution {
     }
 
     private void shifOneElementToRight(int[] numbers, int index) {
-        for (int i = numbers.length - 2; i >= index; i--) {
+        int i = numbers.length - 2;
+        while (i >= index) {
             numbers[i + 1] = numbers[i];
+            i--;
         }
     }
 }
